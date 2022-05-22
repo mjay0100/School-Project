@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Emergency Helpsite Home Page</title>
+    <link rel="stylesheet" type="text/css" href="./public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>
+          <a href="index.html"
+            ><span><i class="fa-solid fa-heart-pulse"></i></span>HelpSite</a
+          >
+        </h1>
+        <ul>
+          <li><a href="/src/index.html"> Home </a></li>
+          <li><a href="/src/about.html"> About</a></li>
+          <li><a href="/src/image.html"> Images</a></li>
+          <li><a href="/src/contact.html">Contact </a></li>
+          <li><a href="/src/cv.html"> CV </a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+      <img
+        class="main-img"
+        src="https://images.unsplash.com/photo-1608979827489-2b855e79debe?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhbHRoJTIwY2VudGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500"
+        alt=""
+      />
+      <div class="left">
+        <h2>Amina EMERGENCY HELPSITE</h2>
+        <p>The reliable medical center</p>
+      </div>
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("ul");
+      console.log(nav);
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
