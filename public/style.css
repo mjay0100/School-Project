@@ -13,7 +13,6 @@ body {
 
 nav {
   display: flex;
-  /* margin: 1rem auto; */
   justify-content: space-around;
   align-items: center;
   background-color: rgb(62, 120, 228);
@@ -46,14 +45,9 @@ img {
   height: 100%;
 }
 
-.main-img {
-  height: 100vh;
-}
-
 .left {
   text-align: center;
   width: 50vw;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,6 +128,7 @@ button {
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 
 .bar {
@@ -214,40 +209,12 @@ li {
   }
 }
 
-/* .container{
-width: 100%;
-height: 700px;
-background-color: ghostwhite;
+@media only screen and (max-width: 900px) {
+  .main {
+    display: block;
+  }
+  .left {
+    width: 100%;
+    padding: 2rem;
+  }
 }
-.top{
-width: 100%;
-height: 180px;
-background-color: floralwhite;
-text-align: center;
-font-size: 20px;
-}
-.center{
-width: 100%;
-height: 430px;
-background-color: royalblue;
-}
-.bottom{
-width: 100%;
-height: 100px;
-background-color: lightblue;
-float: left;
-}
-.lhs{
-width: 300px;
-height: 430px;
-background-color:midnightblue ;
-float: left;
-}
-.rhs{
-width: 700px;
-height: 500px;
-float: left;
-}
-table{
-border: 1px;
-} */
